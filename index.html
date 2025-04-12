@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Quiz Master</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="start-screen" id="startScreen">
+            <div class="logo-text">AnimeQuiz</div>
+            <div class="anime-logo">
+                <img src="https://styles.redditmedia.com/t5_9acc3t/styles/communityIcon_uf4j89pdb9nb1.png" alt="Anime Quiz Logo" style="width: 100%;">
+            </div>
+            <h2>Test Your Anime Knowledge!</h2>
+            <p>Think you know everything about the world of anime? Put your knowledge to the test with our ultimate anime quiz! Answer questions about your favorite shows, characters, and more.</p>
+            <button id="startButton">Start Quiz</button>
+        </div>
+        
+        <div id="quizContainer" style="display: none;">
+            <header>
+                <h1>Anime Quiz Master</h1>
+                <div class="score-display">
+                    <span id="questionCounter">Question 1/10</span>
+                    <span id="scoreCounter">Score: 0</span>
+                </div>
+                <div class="progress-container">
+                    <div class="progress-bar" id="progressBar"></div>
+                </div>
+            </header>
+            
+            <div class="question-container">
+                <div class="question-number" id="questionNumber">1</div>
+                <div class="question" id="question">What anime is this character from?</div>
+                <div class="image-container">
+                    <img id="questionImage" src="https://styles.redditmedia.com/t5_9acc3t/styles/communityIcon_uf4j89pdb9nb1.png" alt="Quiz question image">
+                </div>
+                <div class="options-container" id="options">
+                    <!-- Options will be inserted here dynamically -->
+                </div>
+            </div>
+            
+            <div class="controls">
+                <button id="prevButton" disabled>Previous</button>
+                <button id="nextButton" disabled>Next</button>
+            </div>
+        </div>
+        
+        <div class="results" id="results">
+            <h2>Quiz Complete!</h2>
+            <p>You scored <span id="finalScore">0</span> out of <span id="totalQuestions">10</span>!</p>
+            <p id="resultMessage">Great job!</p>
+            <button id="restartButton">Restart Quiz</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
